@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "Mehrshad",
+    "Password": "mehr1234",
+    "Major": 100,
+    "StudentNumberCard": 4001234,
+    "DateBirthDay": "2002-10-11T00:00:00",
+    "College": 500
+  },
+  {
+    "Name": "Negin",
+    "Password": "Negin1234",
+    "Major": 100,
+    "StudentNumberCard": 4001235,
+    "DateBirthDay": "2002-10-11T00:00:00",
+    "College": 500
+  },
+  {
+    "Name": "Bahar",
+    "Password": "Bahar1234",
+    "Major": 110,
+    "StudentNumberCard": 4005671,
+    "DateBirthDay": "2002-10-11T00:00:00",
+    "College": 500
+  },
+  {
+    "Name": "Aria",
+    "Password": "Aria1234",
+    "Major": 100,
+    "StudentNumberCard": 4001236,
+    "DateBirthDay": "2002-10-11T00:00:00",
+    "College": 500
+  },
+  {
+    "Name": "Borna",
+    "Password": "borna1234",
+    "Major": 110,
+    "StudentNumberCard": 4005672,
+    "DateBirthDay": "2002-10-11T00:00:00",
+    "College": 500
+  }
+]
