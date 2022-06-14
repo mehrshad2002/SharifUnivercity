@@ -34,7 +34,8 @@
                     }
                     else
                     {
-                        //call Register
+                        RegisterLesson RL = new RegisterLesson();
+                        RL.Start(valid);
                     }
                     break;
 

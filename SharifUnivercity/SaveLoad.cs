@@ -15,13 +15,22 @@ namespace SharifUnivercity
             File.WriteAllText(Path, jsonString);
         }
 
-        public List<Account> Load()
+        public List<Account> LoadStudentData()
         {
             StudentAccount SA = new StudentAccount();
             SA.CreateStudentAccount();
             var json = File.ReadAllText("../../../DataFile/StudentData/Students.json");
             List<Account> Students = JsonConvert.DeserializeObject<List<Account>>(json);
             return Students;
+        }
+
+        public List<Lesson> LoadLessonData()
+        {
+            LessonCreate SA = new LessonCreate();
+            SA.CreateLesson();
+            var json = File.ReadAllText("../../../DataFile/LessonData/Lessons.json");
+            List<Lesson> LessonData = JsonConvert.DeserializeObject<List<Lesson>>(json);
+            return LessonData;
         }
     }
 }

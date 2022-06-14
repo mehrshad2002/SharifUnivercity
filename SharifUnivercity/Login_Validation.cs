@@ -33,7 +33,7 @@
         private Account CheckLogin(int cardNumber , string password)
         {
             SaveLoad sl = new SaveLoad();
-            List<Account> accounts =  sl.Load();
+            List<Account> accounts =  sl.LoadStudentData();
 
             foreach( Account account in accounts)
             {
