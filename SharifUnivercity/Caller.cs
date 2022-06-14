@@ -2,9 +2,53 @@
 {
     internal class Caller
     {
-        internal void Call(Login_Validation valid)
+        public bool Call(Login_Validation valid , int commandVal , ref bool Flag)
         {
-            throw new NotImplementedException();
+            
+            IO io = new IO();
+            switch (commandVal){
+                case 1:
+                    //cal About ;
+                    break;
+                case 2:
+                    //cal news
+                    break;
+
+                case 3:
+                    //Login Section
+                    io.Print(Flag);
+                    if( Flag != true )
+                    {
+                        Flag = valid.Login();
+                    }
+                    else
+                    {
+                        io.Print("You Are SyncUp !");
+                    }
+                    break;
+
+                case 4:
+                    if( Flag != true)
+                    {
+                        io.Print("You Should Login First.");
+                    }
+                    else
+                    {
+                        //call Register
+                    }
+                    break;
+                case 5:
+                    //cal email
+                    break;
+                case 6:
+                //cal College
+                default:
+                    io.Print("Invalid Command");
+                    break;
+
+
+            }
+            return true;
         }
     }
 }

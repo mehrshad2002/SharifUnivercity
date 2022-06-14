@@ -19,18 +19,25 @@ namespace SharifUnivercity
         public static void Start( Login_Validation Valid )
         {
             IO io = new IO();
-            //Caller caller = new Caller();
+            Caller caller = new Caller();
 
-            bool Flag = true ;
-            while (Flag == true)
+            bool LoginFlag = false;
+            bool WhileFlag = true ;
+            while (WhileFlag == true)
             {
                 io.Print("\n-----");
                 io.Print("1-About\n2-News\n3-Login\n4-Register Course\n5-Email\n6-College\n0-Exit");
                 io.Print("Enter Command Code :");
                 // need Try And Catch
-                int CommandInt = io.GetInt();
+                int commandVal = io.GetInt();
 
-                //caller.Call(Valid);
+                if( commandVal == 0)
+                {
+                    break;
+                }
+
+                caller.Call(Valid , commandVal ,ref LoginFlag);
+
                 // Flag = caller --> Command Number
             }
         }
