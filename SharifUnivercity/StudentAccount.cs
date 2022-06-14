@@ -23,7 +23,8 @@ namespace SharifUnivercity
                 accounts.Add(new Account("Aria", "Aria1234", 100, 4001236, new DateTime(2002, 10, 11), 500 , null));
                 accounts.Add(new Account("Borna", "borna1234", 110, 4005672, new DateTime(2002, 10, 11), 500 , null));
 
-                sl.Save(accounts);
+                string path = "../../../DataFile/StudentData/Students.json";
+                sl.Save(accounts , path );
             }
         }
     }

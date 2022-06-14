@@ -9,9 +9,8 @@ namespace SharifUnivercity
 {
     public class SaveLoad
     {
-        public void Save( List<Account> data)
+        public void Save<E>( List<E> data , string Path)
         {
-            string Path = "../../../DataFile/StudentData/Students.json";
             string jsonString = JsonConvert.SerializeObject(data, Formatting.Indented);
             File.WriteAllText(Path, jsonString);
         }
