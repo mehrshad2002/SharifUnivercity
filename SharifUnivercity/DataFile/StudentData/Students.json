@@ -1,42 +1,82 @@
 [
   {
+    "lessons": [
+      {
+        "Students_In_Class": [
+          0
+        ],
+        "Name": "Nodata",
+        "Code": 0,
+        "Major": 0,
+        "Copacity": 100,
+        "Copacity_Now": 0
+      },
+      {
+        "Students_In_Class": [
+          0,
+          4001234
+        ],
+        "Name": "Computer-1",
+        "Code": 701,
+        "Major": 100,
+        "Copacity": 20,
+        "Copacity_Now": 2
+      }
+    ],
     "Name": "Mehrshad",
     "Password": "mehr1234",
     "Major": 100,
     "StudentNumberCard": 4001234,
     "DateBirthDay": "2002-10-11T00:00:00",
-    "College": 500
+    "College": 500,
+    "Capacity_Lesson": 1
   },
   {
+    "lessons": [
+      null
+    ],
     "Name": "Negin",
     "Password": "Negin1234",
     "Major": 100,
     "StudentNumberCard": 4001235,
     "DateBirthDay": "2002-10-11T00:00:00",
-    "College": 500
+    "College": 500,
+    "Capacity_Lesson": 0
   },
   {
+    "lessons": [
+      null
+    ],
     "Name": "Bahar",
     "Password": "Bahar1234",
     "Major": 110,
     "StudentNumberCard": 4005671,
     "DateBirthDay": "2002-10-11T00:00:00",
-    "College": 500
+    "College": 500,
+    "Capacity_Lesson": 0
   },
   {
+    "lessons": [
+      null
+    ],
     "Name": "Aria",
     "Password": "Aria1234",
     "Major": 100,
     "StudentNumberCard": 4001236,
     "DateBirthDay": "2002-10-11T00:00:00",
-    "College": 500
+    "College": 500,
+    "Capacity_Lesson": 0
   },
   {
+    "lessons": [
+      null
+    ],
     "Name": "Borna",
     "Password": "borna1234",
     "Major": 110,
     "StudentNumberCard": 4005672,
     "DateBirthDay": "2002-10-11T00:00:00",
-    "College": 500
+    "College": 500,
+    "Capacity_Lesson": 0
   }
 ]

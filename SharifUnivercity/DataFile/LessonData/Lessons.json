@@ -1,50 +1,63 @@
 [
   {
+    "Students_In_Class": [
+      0,
+      4001234
+    ],
     "Name": "Computer-1",
     "Code": 701,
     "Major": 100,
     "Copacity": 20,
-    "Copacity_Now": 0,
-    "Students_In_Class": null
+    "Copacity_Now": 2
   },
   {
+    "Students_In_Class": [
+      0
+    ],
     "Name": "Math-1",
     "Code": 702,
     "Major": 100,
     "Copacity": 15,
-    "Copacity_Now": 0,
-    "Students_In_Class": null
+    "Copacity_Now": 0
   },
   {
+    "Students_In_Class": [
+      0
+    ],
     "Name": "Advanced-Programming",
     "Code": 703,
     "Major": 100,
     "Copacity": 20,
-    "Copacity_Now": 0,
-    "Students_In_Class": null
+    "Copacity_Now": 0
   },
   {
+    "Students_In_Class": [
+      0
+    ],
     "Name": "Data-Structures",
     "Code": 704,
     "Major": 100,
     "Copacity": 15,
-    "Copacity_Now": 0,
-    "Students_In_Class": null
+    "Copacity_Now": 0
   },
   {
+    "Students_In_Class": [
+      0
+    ],
     "Name": "Physics-1",
     "Code": 705,
     "Major": 100,
     "Copacity": 30,
-    "Copacity_Now": 0,
-    "Students_In_Class": null
+    "Copacity_Now": 0
   },
   {
+    "Students_In_Class": [
+      0
+    ],
     "Name": "Computer-Scince",
     "Code": 706,
     "Major": 100,
     "Copacity": 10,
-    "Copacity_Now": 0,
-    "Students_In_Class": null
+    "Copacity_Now": 0
   }
 ]

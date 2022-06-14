@@ -21,7 +21,7 @@
                     break;
                 }
 
-                LV.Check(commandInt valid );
+                bool FlagSaveLesson = LV.Check(commandInt , valid );//if our flag == true --> we can save data 
 
 
             }
