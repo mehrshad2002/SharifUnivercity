@@ -9,8 +9,6 @@
             List<Lesson> lessons = sl.LoadLessonData();
             List<Account> accounts = sl.LoadStudentData();
 
-            //lessons = sl.Load();
-
             bool CL = CheckLesson( lessonCode, lessons);//1
             bool CCL = CheckCapacityLesson(lessons , valid , lessonCode);
             bool CCS = CheckCapacityStudent(valid);
@@ -37,7 +35,7 @@
                             if(lesson.Code == lessonCode)
                             {
                                 ++account.Capacity_Lesson;
-                                account.lessons.Add(lesson);
+                                account.lessons.Add(lesson.Name);//error 
                                 string path = "../../../DataFile/StudentData/Students.json";
                                 sl.Save(accounts , path);
                             }
@@ -70,9 +68,6 @@
                     ++lesson.Copacity_Now;//some day we should save this data 
                     if ( lesson.Copacity_Now < lesson.Copacity)
                     {
-                        //lesson.Students_In_Class.Add(valid.Studentobj.StudentNumberCard);//save student number in lesson 
-                        //string path = "../../../DataFile/LessonData/Lessons.json";
-                        //sl.Save(lessons, path);
                         return true;
                     }
                 }
@@ -91,18 +86,18 @@
             return true ;
         }
 
-        public bool CheckReRegister(Login_Validation valid , int lessonCode , List<Lesson> lessons , List<Account> accounts)
+        public bool CheckReRegister(Login_Validation valid , int lessonCode , List<Lesson> lessons  , List<Account> accounts)
         {
-
-            foreach( Account account in accounts)
+            //we bulding new one !!
+            foreach( Lesson lesson in lessons)
             {
-                if( account.StudentNumberCard == valid.Studentobj.StudentNumberCard)
+                if( lessonCode == lesson.Code)
                 {
-                    foreach(Lesson lesson in account.lessons)
+                    foreach( Account account in accounts)
                     {
-                        foreach( Lesson lesson2 in lessons)
+                        foreach( string NameLesson in account.lessons)
                         {
-                            if( lesson.Code == lesson2.Code)
+                            if( NameLesson == lesson.Name)
                             {
                                 return false;
                             }

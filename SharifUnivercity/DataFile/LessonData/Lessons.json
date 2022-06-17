@@ -12,13 +12,14 @@
   },
   {
     "Students_In_Class": [
-      0
+      0,
+      4001234
     ],
     "Name": "Math-1",
     "Code": 702,
     "Major": 100,
     "Copacity": 15,
-    "Copacity_Now": 0
+    "Copacity_Now": 2
   },
   {
     "Students_In_Class": [
