@@ -46,7 +46,6 @@
                 io.Print("Done!");
                 return true;
             }
-            io.Print("Some Problem!");
             return false;
         }
 
@@ -79,7 +78,10 @@
                 {
                     return true;
                 }
-            }return false;
+            }
+            IO io = new IO();
+            io.Print("Error --> This Lesson And Code Is Not Exist");
+            return false;
         }
 
         public bool CheckCapacityLesson( List<Lesson> lessons, Login_Validation valid , int lessonCode  )
@@ -95,16 +97,22 @@
                     {
                         return true;
                     }
+                    else
+                    {
+                        io.Print("Error --> Capacity Of This Lesson Fs Full");
+                        return false;
+                    }
                 }
             }
-            io.Print("Capacity Of This Lesson Fs Full");
-            return false ;
+            return false;
         }
 
         public bool CheckCapacityStudent(Login_Validation valid)
         {
-            if(++valid.Studentobj.Capacity_Lesson > 5)
+            if(++valid.Studentobj.Capacity_Lesson >5)
             {
+                IO io = new IO();
+                io.Print("Error --> Capacity Is Full!<Max Is 5>");
                 return false ;
             }
             
@@ -113,7 +121,7 @@
 
         public bool CheckReRegister(Login_Validation valid , int lessonCode , List<Lesson> lessons  , List<Account> accounts)
         {
-            //we bulding new one !!
+            IO io = new IO();
             foreach( Lesson lesson in lessons)
             {
                 if( lessonCode == lesson.Code)
@@ -124,6 +132,7 @@
                         {
                             if( NameLesson == lesson.Name)
                             {
+                                io.Print("Error --> You Picked This Lesson Before");
                                 return false;
                             }
                         }

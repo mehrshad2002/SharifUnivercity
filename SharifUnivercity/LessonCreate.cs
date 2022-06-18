@@ -21,7 +21,7 @@ namespace SharifUnivercity
                 lessons.Add(new Lesson("Advanced-Programming", 703, 100, 20, 0, 0));
                 lessons.Add(new Lesson("Data-Structures", 704, 100, 15, 0, 0));
                 lessons.Add(new Lesson("Physics-1", 705, 100, 30, 0, 0));
-                lessons.Add(new Lesson("Computer-Scince", 706, 100, 10, 0, 0));
+                lessons.Add(new Lesson("Painting", 706,110, 10, 0, 0));
 
                 string path = "../../../DataFile/LessonData/Lessons.json";
                 sl.Save(lessons , path );
