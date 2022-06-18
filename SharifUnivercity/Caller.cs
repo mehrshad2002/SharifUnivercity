@@ -16,7 +16,6 @@
 
                 case 3:
                     //Login Section
-                    io.Print(Flag);
                     if( Flag != true )
                     {
                         Flag = valid.Login();

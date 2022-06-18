@@ -1,14 +1,13 @@
 [
   {
     "Students_In_Class": [
-      0,
-      4001234
+      0
     ],
     "Name": "Computer-1",
     "Code": 701,
     "Major": 100,
     "Copacity": 20,
-    "Copacity_Now": 2
+    "Copacity_Now": 0
   },
   {
     "Students_In_Class": [
@@ -23,13 +22,14 @@
   },
   {
     "Students_In_Class": [
-      0
+      0,
+      4001234
     ],
     "Name": "Advanced-Programming",
     "Code": 703,
     "Major": 100,
     "Copacity": 20,
-    "Copacity_Now": 0
+    "Copacity_Now": 2
   },
   {
     "Students_In_Class": [
@@ -53,12 +53,13 @@
   },
   {
     "Students_In_Class": [
-      0
+      0,
+      4001234
     ],
     "Name": "Computer-Scince",
     "Code": 706,
     "Major": 100,
     "Copacity": 10,
-    "Copacity_Now": 0
+    "Copacity_Now": 2
   }
 ]

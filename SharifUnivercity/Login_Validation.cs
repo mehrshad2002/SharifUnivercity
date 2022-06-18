@@ -13,8 +13,22 @@
         public bool Login()
         {
             IO io = new IO();
-            io.PrintAt("Enter your Student CardNumber : ");
-            int cardNumber = io.GetInt();
+
+            int cardNumber;
+            while ( true )
+            {
+                try
+                {
+                    io.PrintAt("Enter your Student CardNumber : ");
+                    cardNumber = io.GetInt();
+                    break;
+                }catch( Exception e)
+                {
+                    io.Print("Enter <integer> Number !");
+                }
+            }
+
+
 
             io.PrintAt("Enter Your Password :");
             string password = io.GetStr(); 
@@ -23,7 +37,7 @@
             if (account != null)
             {
                 Studentobj = account; // set a data 
-                io.Print(Studentobj.Name); // Should bre dleted
+                io.Print($"Welcome Back {Studentobj.Name}");
                 return true;
             }
             io.Print("Invalid Password Or Student Card Number ");

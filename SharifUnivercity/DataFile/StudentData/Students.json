@@ -1,8 +1,9 @@
 [
   {
     "lessons": [
-      "0",
-      "Computer-1",
+      "",
+      "Computer-Scince",
+      "Advanced-Programming",
       "Math-1"
     ],
     "Name": "Mehrshad",
@@ -11,11 +12,11 @@
     "StudentNumberCard": 4001234,
     "DateBirthDay": "2002-10-11T00:00:00",
     "College": 500,
-    "Capacity_Lesson": 2
+    "Capacity_Lesson": 3
   },
   {
     "lessons": [
-      "0"
+      ""
     ],
     "Name": "Negin",
     "Password": "Negin1234",
@@ -27,7 +28,7 @@
   },
   {
     "lessons": [
-      "0"
+      ""
     ],
     "Name": "Bahar",
     "Password": "Bahar1234",
@@ -39,7 +40,7 @@
   },
   {
     "lessons": [
-      "0"
+      ""
     ],
     "Name": "Aria",
     "Password": "Aria1234",
@@ -51,7 +52,7 @@
   },
   {
     "lessons": [
-      "0"
+      ""
     ],
     "Name": "Borna",
     "Password": "borna1234",

@@ -4,12 +4,13 @@
     {
         public bool Check(int lessonCode , Login_Validation valid)
         {
+            IO io = new IO();
             SaveLoad sl = new SaveLoad();
 
             List<Lesson> lessons = sl.LoadLessonData();
             List<Account> accounts = sl.LoadStudentData();
 
-            bool CL = CheckLesson( lessonCode, lessons);//1
+            bool CL = CheckLesson( lessonCode, lessons);
             bool CCL = CheckCapacityLesson(lessons , valid , lessonCode);
             bool CCS = CheckCapacityStudent(valid);
             bool CRR = CheckReRegister(valid, lessonCode , lessons , accounts );
@@ -35,15 +36,39 @@
                             if(lesson.Code == lessonCode)
                             {
                                 ++account.Capacity_Lesson;
-                                account.lessons.Add(lesson.Name);//error 
+                                account.lessons.Add(lesson.Name);
                                 string path = "../../../DataFile/StudentData/Students.json";
                                 sl.Save(accounts , path);
                             }
                         }
                     }
                 }
+                io.Print("Done!");
                 return true;
-            }return false;
+            }
+            io.Print("Some Problem!");
+            return false;
+        }
+
+        public void ShowMyLesson(Login_Validation valid)
+        {
+            IO io = new IO();
+            SaveLoad sl = new SaveLoad();
+            List<Lesson> lessons = sl.LoadLessonData();
+            List<Account> accounts = sl.LoadStudentData();
+
+            io.Print("\n-- Your Lessone --");
+            foreach( Account account in accounts)
+            {
+                if( account.Name == valid.Studentobj.Name)
+                {
+                    foreach( string lesson in account.lessons)
+                    {
+                        io.Print(lesson);
+                    }
+                }
+            }
+            io.Print("\n----");
         }
 
         public bool CheckLesson( int lessonCode , List<Lesson> lessons)

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;//?
+
 
 namespace SharifUnivercity
 {
@@ -25,16 +27,29 @@ namespace SharifUnivercity
             bool WhileFlag = true ;
             while (WhileFlag == true)
             {
-                io.Print("\n-----");
-                io.Print("1-About\n2-News\n3-Login\n4-Register Course\n5-Email\n6-College\n0-Exit");
-                io.Print("Enter Command Code :");
-                // need Try And Catch
-                int commandVal = io.GetInt();
+                int commandVal;
+
+                while ( true )
+                {
+                    try
+                    {
+                        io.Print("\n-----");
+                        io.Print("1-About\n2-News\n3-Login\n4-Register Course\n5-Email\n6-College\n0-Exit");
+                        io.Print("Enter Command Code :");
+                        commandVal = io.GetInt();
+                        break;
+                    }
+                    catch( Exception e)
+                    {
+                        io.Print("Enter <integer> Number!");
+                    }
+                }
 
                 if( commandVal == 0)
-                {
-                    break;
-                }
+                   {
+                      break;
+                   }
+
 
                 caller.Call(Valid , commandVal ,ref LoginFlag);
 
